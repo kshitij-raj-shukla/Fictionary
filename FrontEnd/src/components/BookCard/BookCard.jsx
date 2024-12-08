@@ -14,7 +14,7 @@ const BookCard = ({ data, favourite }) => {
       {},
       {headers}
     );
-    alert(response.data.message);
+    alert(response.data.message); 
     
   }
   // console.log("d:", data);

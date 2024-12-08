@@ -39,7 +39,7 @@ function Cart() {
         
         {order:Cart},{headers});
     alert(response.data.message);
-    navigate("/profile/orderHistory");
+    // navigate("/profile/orderHistory");
     }catch(error){
       console.log(error);
     }

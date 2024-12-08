@@ -38,13 +38,13 @@ const SideBar = ({ data }) => {
 
             {role==="admin"&&(
                 <div className="w-full grow flex-col items-center justify-end hidden lg:flex">
-                {/* <Link
+                <Link
                     to="/profile"
                     className="text-zinc-100 font-semibold w-full py-2 text-center hover:bg-zinc-900 rounded transition-all duration-300">
                     All Order
-                </Link> */}
+                </Link>
                 <Link
-                    to="/profile"
+                    to="/profile/add-book"
                     className="text-zinc-100 font-semibold w-full py-2 mt-4 text-center hover:bg-zinc-900 rounded transition-all duration-300">
                     Add Book
                 </Link>

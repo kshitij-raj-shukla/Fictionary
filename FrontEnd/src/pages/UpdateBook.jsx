@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateBook = () => {
-    const {id} = useParams();
-    const navigate= useNavigate();
     
     const [Data, setData] = useState({
         url: "",
@@ -14,6 +12,8 @@ const UpdateBook = () => {
         desc: "",
         language: "",
     });
+    const {id} = useParams();
+    const navigate= useNavigate();
     const headers = {
         id: localStorage.getItem("id"),
         authorization: `Bearer ${localStorage.getItem("token")}`,

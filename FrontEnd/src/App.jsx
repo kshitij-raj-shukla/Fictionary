@@ -40,8 +40,8 @@ const App = () => {
         <Route path="/all-books" element={<AllBooks />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} >
-          {role ==="user"? <Route index element={<Favourites/>}/> : <Route index element={<AddBook/>}/> }
-          {/* {role==="admin" && <Route path="/profile/add-book" index element={<AddBook/>}/>} */}
+          {role ==="user"? <Route index element={<Favourites/>}/> : <Route index element={<AllOrders/>}/> }
+          {role==="admin" && <Route path="/profile/add-book" index element={<AddBook/>}/>}
           <Route path="/profile/orderHistory" element={<UsrOrderHistory/>} />
           <Route path="/profile/settings" element={<Setting/>} />
         </Route>
