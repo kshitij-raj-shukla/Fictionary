@@ -58,7 +58,7 @@ router.delete("/delete-book",async(req,res)=>{
     return res.status(200).json({message: "Book deleted successfully"});
   }catch(error){
     res.status(404).json({message:"internal server error"});
-  }
+  } 
 })
 
 //get book --admin
